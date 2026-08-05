@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>株式会社久松機工｜未来を支える精密加工技術</title>
+<meta name="description" content="東京都瑞穂町の精密加工メーカー。半導体・FPD製造装置から航空宇宙・加速器関連まで、大型精密部品加工・5軸加工・三次元測定で社会の最先端を支える。ISO9001認証取得。" />
+<link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&family=Noto+Sans+JP:wght@400;500;700;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = { theme: { extend: {
+    colors: { ink:'#0A0B0D', navy:{DEFAULT:'#0B1B3A',light:'#0E2148',deep:'#081428'}, charcoal:'#14181F',
+      silver:{DEFAULT:'#E6EAEE',muted:'#9AA3AD',dark:'#5A626C'}, accent:{DEFAULT:'#2D7FF9',cyan:'#38BDF8',blue:'#2D7FF9',teal:'#2DD4BF',warm:'#FB923C'} },
+    fontFamily: { sans:['"Noto Sans JP"','sans-serif'], display:['Inter','"Noto Sans JP"','sans-serif'], mono:['"JetBrains Mono"','monospace'] },
+    letterSpacing: { tightest:'-0.045em' } } } }
+</script>
+<style>
+  html{-webkit-font-smoothing:antialiased}
+  body{background:#0A0B0D;color:#E6EAEE;overflow-x:hidden;font-family:"Noto Sans JP",sans-serif}
+  section{scroll-margin-top:88px}
+  ::selection{background:rgba(45,127,249,.35);color:#fff}
+  ::-webkit-scrollbar{width:10px}::-webkit-scrollbar-track{background:#0A0B0D}::-webkit-scrollbar-thumb{background:#2a313c;border-radius:6px}
+  .tech-grid{background-image:linear-gradient(to right,rgba(255,255,255,.04) 1px,transparent 1px),linear-gradient(to bottom,rgba(255,255,255,.04) 1px,transparent 1px);background-size:64px 64px}
+  .tech-grid-sm{background-image:linear-gradient(to right,rgba(255,255,255,.05) 1px,transparent 1px),linear-gradient(to bottom,rgba(255,255,255,.05) 1px,transparent 1px);background-size:28px 28px}
+  .metal{background:radial-gradient(120% 120% at 70% 0%,rgba(45,127,249,.18),transparent 55%),linear-gradient(135deg,#0e2148,#0a0b0d 60%,#14181f)}
+  .people{background:radial-gradient(130% 120% at 70% 10%,rgba(34,211,238,.22),transparent 55%),linear-gradient(150deg,#0e2148,#0a0b0d 65%,#14181f)}
+  .text-gradient-silver{background:linear-gradient(180deg,#fff,#aab2bd);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .text-grad{background:linear-gradient(100deg,#2D7FF9,#22D3EE 50%,#2DD4BF);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .bg-grad{background:linear-gradient(100deg,#2D7FF9,#22D3EE 55%,#2DD4BF)}
+  .text-balance{text-wrap:balance}
+  @keyframes gradient-shift{0%,100%{background-position:0% 50%}50%{background-position:100% 50%}}
+  .animate-gradient-shift{background-size:200% 200%;animation:gradient-shift 16s ease infinite}
+  @keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(8px)}}
+  .animate-bob{animation:bob 1.8s ease-in-out infinite}
+  @keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+  .floaty{animation:floaty 6s ease-in-out infinite}
+  @keyframes pagein{from{opacity:0}to{opacity:1}}
+  .page{animation:pagein .45s ease both}
+  .reveal,.reveal-left,.reveal-right,.reveal-scale{opacity:0;transition:opacity .85s cubic-bezier(.22,1,.36,1),transform .85s cubic-bezier(.22,1,.36,1)}
+  .reveal{transform:translateY(32px)}.reveal-left{transform:translateX(-46px)}.reveal-right{transform:translateX(46px)}.reveal-scale{transform:scale(.92)}
+  .reveal.in,.reveal-left.in,.reveal-right.in,.reveal-scale.in{opacity:1;transform:none}
+  #header.scrolled{background:rgba(10,11,13,.82);backdrop-filter:blur(16px);border-bottom-color:rgba(255,255,255,.06);padding-top:.7rem;padding-bottom:.7rem}
+  #menu-btn.open .hbar:nth-child(1){transform:translateY(7px) rotate(45deg)}#menu-btn.open .hbar:nth-child(2){opacity:0}#menu-btn.open .hbar:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+  details.faq>summary{list-style:none;cursor:pointer}details.faq>summary::-webkit-details-marker{display:none}
+  details.faq .plus{transition:transform .3s}details.faq[open] .plus{transform:rotate(45deg)}
+  .rq-tabs input{position:absolute;opacity:0;width:0;height:0}
+  .rq-panel{display:none}
+  #rq-new:checked ~ .rq-body #rq-panel-new{display:block}
+  #rq-mid:checked ~ .rq-body #rq-panel-mid{display:block}
+  #rq-new:checked ~ .rq-labels label[for="rq-new"],#rq-mid:checked ~ .rq-labels label[for="rq-mid"]{background:linear-gradient(100deg,#2D7FF9,#22D3EE 55%,#2DD4BF);color:#0A0B0D;border-color:transparent}
+  @media (prefers-reduced-motion: reduce){*{animation-duration:.001ms!important;transition-duration:.001ms!important}.reveal,.reveal-left,.reveal-right,.reveal-scale{opacity:1;transform:none}}
+</style>
+</head>
+<body class="font-sans text-silver bg-ink antialiased">
+
+<div id="progress" class="fixed left-0 top-0 z-[60] h-0.5 w-0 bg-grad"></div>
+
+<header id="header" class="fixed top-0 z-50 w-full py-5 border-b border-transparent transition-all duration-500">
+  <div class="mx-auto flex max-w-7xl items-center justify-between px-6">
+    <a href="#" data-page="company" class="flex items-baseline gap-2"><span class="text-lg font-bold tracking-tight text-white">久松機工</span><span class="font-mono text-[10px] tracking-[0.3em] text-silver-muted">HISAMATSU</span></a>
+    <nav class="hidden items-center gap-5 lg:flex">
+      <a href="#strengths" data-page="company" data-target="strengths" class="text-sm text-silver-muted hover:text-white transition-colors">強み</a>
+      <a href="#works" data-page="company" data-target="works" class="text-sm text-silver-muted hover:text-white transition-colors">加工実績</a>
+      <a href="#quality" data-page="company" data-target="quality" class="text-sm text-silver-muted hover:text-white transition-colors">品質管理</a>
+      <a href="#facility" data-page="company" data-target="facility" class="text-sm text-silver-muted hover:text-white transition-colors">設備紹介</a>
+      <a href="#company" data-page="company" data-target="company" class="text-sm text-silver-muted hover:text-white transition-colors">会社案内</a>
+      <a href="#news" data-page="company" data-target="news" class="text-sm text-silver-muted hover:text-white transition-colors">お知らせ</a>
+      <a href="#recruit" data-page="recruit" class="text-sm text-silver-muted hover:text-white transition-colors">採用情報</a>
+      <a href="#contact" data-page="company" data-target="contact" class="rounded-full bg-accent px-5 py-2 text-sm font-medium text-white hover:bg-accent-cyan transition-all">技術相談</a>
+    </nav>
+    <button id="menu-btn" aria-label="メニュー" class="lg:hidden flex h-10 w-10 flex-col items-center justify-center gap-1.5"><span class="hbar h-px w-6 bg-white transition-all"></span><span class="hbar h-px w-6 bg-white transition-all"></span><span class="hbar h-px w-6 bg-white transition-all"></span></button>
+  </div>
+  <div id="mobile-menu" class="hidden lg:hidden border-t border-white/5 bg-ink/95 backdrop-blur-xl">
+    <div class="flex flex-col px-6 py-4">
+      <a href="#strengths" data-page="company" data-target="strengths" class="border-b border-white/5 py-4 text-silver-muted">強み</a>
+      <a href="#works" data-page="company" data-target="works" class="border-b border-white/5 py-4 text-silver-muted">加工実績</a>
+      <a href="#quality" data-page="company" data-target="quality" class="border-b border-white/5 py-4 text-silver-muted">品質管理</a>
+      <a href="#facility" data-page="company" data-target="facility" class="border-b border-white/5 py-4 text-silver-muted">設備紹介</a>
+      <a href="#company" data-page="company" data-target="company" class="border-b border-white/5 py-4 text-silver-muted">会社案内</a>
+      <a href="#news" data-page="company" data-target="news" class="border-b border-white/5 py-4 text-silver-muted">お知らせ</a>
+      <a href="#recruit" data-page="recruit" class="border-b border-white/5 py-4 text-silver-muted">採用情報</a>
+      <a href="#contact" data-page="company" data-target="contact" class="mt-4 mb-2 rounded-full bg-accent py-3 text-center font-medium text-white">技術相談</a>
+    </div>
+  </div>
+</header>
+
+<main>
+<div id="page-company" class="page">
+  <section id="top" class="relative flex min-h-[100svh] items-center overflow-hidden bg-ink">
+    <img src="TOP.jpg" alt="久松機工 加工現場" class="absolute inset-0 h-full w-full object-cover">
+    <div class="absolute inset-0 bg-ink/45"></div><div class="tech-grid absolute inset-0 opacity-20"></div>
+    <div class="absolute inset-0 bg-gradient-to-r from-ink via-ink/80 to-transparent"></div><div class="absolute inset-0 bg-gradient-to-t from-ink via-transparent to-ink/30"></div>
+    <div class="relative z-10 mx-auto w-full max-w-7xl px-6"><div class="max-w-2xl">
+      <p class="reveal mb-6 font-mono text-xs tracking-[0.4em] text-accent-cyan">PRECISION THAT SUPPORTS THE FUTURE</p>
+      <h1 class="text-balance text-5xl font-bold leading-[1.1] tracking-tightest text-white sm:text-6xl md:text-7xl"><span class="reveal block" style="transition-delay:.1s">未来を支える、</span><span class="reveal block" style="transition-delay:.25s">精密加工技術。</span></h1>
+      <p class="reveal mt-8 max-w-xl text-balance text-base leading-relaxed text-silver-muted sm:text-lg" style="transition-delay:.45s" data-cms="lead">半導体・FPD製造装置から、航空宇宙・加速器関連まで。ミクロン単位の精度で、社会の最先端を支えます。</p>
+      <div class="reveal mt-10 flex flex-col gap-4 sm:flex-row" style="transition-delay:.6s"><a href="#contact" data-page="company" data-target="contact" class="rounded-full bg-accent px-8 py-4 text-center font-medium text-white transition-all hover:bg-accent-cyan hover:shadow-[0_0_32px_-4px_rgba(45,127,249,0.7)]">技術相談・お見積り</a><a href="#works" class="rounded-full border border-white/15 px-8 py-4 text-center font-medium text-white backdrop-blur-sm transition-all hover:border-white/40 hover:bg-white/5">加工実績を見る</a></div>
+      <p class="reveal mt-8 font-mono text-xs tracking-wide text-silver-dark" style="transition-delay:.75s">半導体・FPD・航空宇宙・加速器分野の精密部品加工　／　ISO 9001 認証取得</p>
+    </div></div>
+    <div class="absolute bottom-8 left-1/2 -translate-x-1/2"><div class="animate-bob flex h-10 w-6 items-start justify-center rounded-full border border-white/25 p-1.5"><span class="h-2 w-1 rounded-full bg-accent-cyan"></span></div></div>
+  </section>
+
+  <section class="relative border-b border-white/5 bg-ink py-8"><div class="mx-auto max-w-7xl px-6"><div class="reveal flex flex-col items-center gap-5 sm:flex-row sm:justify-between"><p class="shrink-0 font-mono text-xs tracking-[0.3em] text-silver-dark">TRUSTED ACROSS INDUSTRIES</p><div class="flex flex-wrap items-center justify-center gap-x-6 gap-y-3 text-sm text-silver-muted"><span>半導体製造装置</span><span class="hidden h-3 w-px bg-white/15 sm:block"></span><span>FPD製造装置</span><span class="hidden h-3 w-px bg-white/15 sm:block"></span><span>エネルギー関連</span><span class="hidden h-3 w-px bg-white/15 sm:block"></span><span>航空・宇宙関連</span><span class="hidden h-3 w-px bg-white/15 sm:block"></span><span>加速器関連</span></div></div></div></section>
+
+  <section id="strengths" class="relative bg-ink py-28 md:py-36"><div class="mx-auto max-w-7xl px-6">
+    <div class="reveal"><p class="font-mono text-xs tracking-[0.35em] text-accent">01 — STRENGTHS</p><h2 class="mt-4 text-3xl font-bold tracking-tight text-white sm:text-5xl">私たちの<span class="text-gradient-silver">強み</span></h2><p class="mt-5 max-w-2xl text-silver-muted">高精度・大型・複雑形状——難しい要求にこそ、久松機工の技術が応えます。</p></div>
+    <div class="mt-16 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+      <div class="reveal-scale group relative overflow-hidden rounded-2xl border border-white/10 bg-charcoal/60 p-8 transition-all duration-500 hover:border-accent/40 hover:bg-charcoal"><div class="absolute -right-8 -top-8 h-24 w-24 rounded-full bg-accent/0 blur-2xl transition-all duration-500 group-hover:bg-accent/30"></div><span class="font-mono text-xs text-silver-dark">01</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" class="mt-5 h-10 w-10 text-accent-cyan transition-transform duration-500 group-hover:scale-110"><path d="M3 21V7l9-4 9 4v14M3 21h18M9 21v-6h6v6" stroke-linecap="round" stroke-linejoin="round"/></svg><h3 class="mt-6 text-xl font-bold text-white">大型加工</h3><p class="mt-1 font-mono text-xs tracking-wide text-accent">門型5面加工</p><p class="mt-4 text-sm leading-relaxed text-silver-muted">大型門型マシニングセンタによる大物部品の高精度加工。装置フレームや構造部品まで一台で対応します。</p></div>
+      <div class="reveal-scale group relative overflow-hidden rounded-2xl border border-white/10 bg-charcoal/60 p-8 transition-all duration-500 hover:border-accent/40 hover:bg-charcoal" style="transition-delay:.1s"><div class="absolute -right-8 -top-8 h-24 w-24 rounded-full bg-accent/0 blur-2xl transition-all duration-500 group-hover:bg-accent/30"></div><span class="font-mono text-xs text-silver-dark">02</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" class="mt-5 h-10 w-10 text-accent-cyan transition-transform duration-500 group-hover:scale-110"><circle cx="12" cy="12" r="3"/><path d="M12 2v4M12 18v4M2 12h4M18 12h4M5 5l3 3M16 16l3 3M19 5l-3 3M8 16l-3 3" stroke-linecap="round"/></svg><h3 class="mt-6 text-xl font-bold text-white">5軸加工</h3><p class="mt-1 font-mono text-xs tracking-wide text-accent">同時5軸制御</p><p class="mt-4 text-sm leading-relaxed text-silver-muted">複雑形状を一度の段取りで加工。工程集約により精度と生産性を両立し、難形状部品にも対応します。</p></div>
+      <div class="reveal-scale group relative overflow-hidden rounded-2xl border border-white/10 bg-charcoal/60 p-8 transition-all duration-500 hover:border-accent/40 hover:bg-charcoal" style="transition-delay:.2s"><div class="absolute -right-8 -top-8 h-24 w-24 rounded-full bg-accent/0 blur-2xl transition-all duration-500 group-hover:bg-accent/30"></div><span class="font-mono text-xs text-silver-dark">03</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" class="mt-5 h-10 w-10 text-accent-cyan transition-transform duration-500 group-hover:scale-110"><path d="M12 2l8 4v6c0 5-3.5 8-8 10-4.5-2-8-5-8-10V6l8-4zM9 12l2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/></svg><h3 class="mt-6 text-xl font-bold text-white">品質保証</h3><p class="mt-1 font-mono text-xs tracking-wide text-accent">ISO 9001 / 三次元測定</p><p class="mt-4 text-sm leading-relaxed text-silver-muted">ISO 9001に基づく品質管理体制と三次元測定により、トレーサビリティと精度を保証します。</p></div>
+      <div class="reveal-scale group relative overflow-hidden rounded-2xl border border-white/10 bg-charcoal/60 p-8 transition-all duration-500 hover:border-accent/40 hover:bg-charcoal" style="transition-delay:.3s"><div class="absolute -right-8 -top-8 h-24 w-24 rounded-full bg-accent/0 blur-2xl transition-all duration-500 group-hover:bg-accent/30"></div><span class="font-mono text-xs text-silver-dark">04</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" class="mt-5 h-10 w-10 text-accent-cyan transition-transform duration-500 group-hover:scale-110"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2" stroke-linecap="round" stroke-linejoin="round"/></svg><h3 class="mt-6 text-xl font-bold text-white">短納期</h3><p class="mt-1 font-mono text-xs tracking-wide text-accent">4拠点・一貫生産</p><p class="mt-4 text-sm leading-relaxed text-silver-muted">関東4拠点の設備と、設計・加工・組立・検査の一貫体制で、リードタイムを短縮します。</p></div>
+    </div>
+  </div></section>
+
+  <section class="relative overflow-hidden border-y border-white/5 bg-navy-deep py-24"><div class="tech-grid-sm absolute inset-0 opacity-30"></div><div class="relative mx-auto max-w-7xl px-6">
+    <div class="reveal text-center"><p class="font-mono text-xs tracking-[0.35em] text-accent">BY THE NUMBERS</p><h2 class="mt-3 text-2xl font-bold text-white sm:text-3xl">実績と規模</h2></div>
+    <div class="mt-14 grid grid-cols-2 gap-y-12 lg:grid-cols-4">
+      <div class="reveal-scale text-center"><div class="text-5xl font-bold tracking-tight sm:text-7xl"><span class="text-gradient-silver font-mono" data-count="1978">0</span><span class="ml-1 text-xl text-accent-cyan sm:text-3xl">年</span></div><p class="mt-4 text-xs tracking-widest text-silver-muted sm:text-sm">創業（昭和53年）</p></div>
+      <div class="reveal-scale text-center" style="transition-delay:.1s"><div class="text-5xl font-bold tracking-tight sm:text-7xl"><span class="text-gradient-silver font-mono" data-count="55">0</span><span class="ml-1 text-xl text-accent-cyan sm:text-3xl">名</span></div><p class="mt-4 text-xs tracking-widest text-silver-muted sm:text-sm">社員数</p></div>
+      <div class="reveal-scale text-center" style="transition-delay:.2s"><div class="text-5xl font-bold tracking-tight sm:text-7xl"><span class="text-gradient-silver font-mono" data-count="4">0</span><span class="ml-1 text-xl text-accent-cyan sm:text-3xl">拠点</span></div><p class="mt-4 text-xs tracking-widest text-silver-muted sm:text-sm">関東4拠点体制</p></div>
+      <div class="reveal-scale text-center" style="transition-delay:.3s"><div class="text-5xl font-bold tracking-tight sm:text-7xl"><span class="text-gradient-silver font-mono" data-count="6">0</span><span class="ml-1 text-xl text-accent-cyan sm:text-3xl">分野</span></div><p class="mt-4 text-xs tracking-widest text-silver-muted sm:text-sm">対応領域</p></div>
+    </div>
+  </div></section>
+
+  <section id="works" class="relative bg-ink py-28 md:py-36"><div class="mx-auto max-w-7xl px-6">
+    <div class="reveal"><p class="font-mono text-xs tracking-[0.35em] text-accent">02 — WORKS</p><div class="mt-4 flex flex-wrap items-end justify-between gap-4"><h2 class="text-3xl font-bold tracking-tight text-white sm:text-5xl">加工実績</h2><a href="#cases" class="text-sm text-silver-muted hover:text-white transition-colors">加工事例を見る →</a></div></div>
+    <div class="mt-16 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+      <article class="reveal group cursor-pointer overflow-hidden rounded-2xl border border-white/10 bg-charcoal/50 transition-all duration-500 hover:border-white/20"><div class="relative aspect-[4/3] overflow-hidden bg-charcoal"><img src="work1.jpg" alt="真空チャンバー コンポーネント" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"><span class="absolute left-4 top-4 rounded-full border border-accent-cyan/40 bg-ink/50 px-3 py-1 text-xs text-accent-cyan backdrop-blur-sm">半導体装置</span></div><div class="p-6"><h3 class="text-lg font-bold text-white">真空チャンバー コンポーネント</h3><div class="mt-4 flex flex-wrap gap-x-5 gap-y-1 font-mono text-xs text-silver-muted"><span>材質 / A5052</span><span>工法 / 5軸加工</span><span>仕様 / UHV対応</span></div></div></article>
+      <article class="reveal group cursor-pointer overflow-hidden rounded-2xl border border-white/10 bg-charcoal/50 transition-all duration-500 hover:border-white/20" style="transition-delay:.1s"><div class="relative aspect-[4/3] overflow-hidden bg-charcoal"><img src="work2.jpg" alt="大型精密ディスク" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"><span class="absolute left-4 top-4 rounded-full border border-emerald-300/40 bg-ink/50 px-3 py-1 text-xs text-emerald-300 backdrop-blur-sm">FPD装置</span></div><div class="p-6"><h3 class="text-lg font-bold text-white">大型精密ディスク</h3><div class="mt-4 flex flex-wrap gap-x-5 gap-y-1 font-mono text-xs text-silver-muted"><span>材質 / A5052</span><span>工法 / 5軸加工</span><span>仕様 / 高精度ポケット</span></div></div></article>
+      <article class="reveal group cursor-pointer overflow-hidden rounded-2xl border border-white/10 bg-charcoal/50 transition-all duration-500 hover:border-white/20" style="transition-delay:.2s"><div class="relative aspect-[4/3] overflow-hidden bg-charcoal"><img src="work3.jpg" alt="冷却プレート 流路加工" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"><span class="absolute left-4 top-4 rounded-full border border-fuchsia-300/40 bg-ink/50 px-3 py-1 text-xs text-fuchsia-300 backdrop-blur-sm">加速器関連</span></div><div class="p-6"><h3 class="text-lg font-bold text-white">冷却プレート（流路加工）</h3><div class="mt-4 flex flex-wrap gap-x-5 gap-y-1 font-mono text-xs text-silver-muted"><span>材質 / A5052</span><span>工法 / 精密加工</span><span>仕様 / スパイラル流路</span></div></div></article>
+      <article class="reveal group cursor-pointer overflow-hidden rounded-2xl border border-white/10 bg-charcoal/50 transition-all duration-500 hover:border-white/20"><div class="metal relative aspect-[4/3] overflow-hidden"><div class="tech-grid-sm absolute inset-0 opacity-40 transition-transform duration-700 group-hover:scale-110"></div><span class="absolute bottom-4 left-4 font-mono text-5xl font-bold text-white/5">Ti</span><span class="absolute left-4 top-4 rounded-full border border-violet-300/40 bg-ink/40 px-3 py-1 text-xs text-violet-300 backdrop-blur-sm">航空宇宙</span></div><div class="p-6"><h3 class="text-lg font-bold text-white">軽量構造部品</h3><div class="mt-4 flex flex-wrap gap-x-5 gap-y-1 font-mono text-xs text-silver-muted"><span>材質 / Ti-6Al-4V</span><span>工法 / 5軸加工</span><span>仕様 / ±5μm</span></div></div></article>
+      <article class="reveal group cursor-pointer overflow-hidden rounded-2xl border border-white/10 bg-charcoal/50 transition-all duration-500 hover:border-white/20" style="transition-delay:.1s"><div class="metal relative aspect-[4/3] overflow-hidden"><div class="tech-grid-sm absolute inset-0 opacity-40 transition-transform duration-700 group-hover:scale-110"></div><span class="absolute bottom-4 left-4 font-mono text-5xl font-bold text-white/5">SUS304</span><span class="absolute left-4 top-4 rounded-full border border-amber-300/40 bg-ink/40 px-3 py-1 text-xs text-amber-300 backdrop-blur-sm">エネルギー</span></div><div class="p-6"><h3 class="text-lg font-bold text-white">大型フランジ</h3><div class="mt-4 flex flex-wrap gap-x-5 gap-y-1 font-mono text-xs text-silver-muted"><span>材質 / SUS304</span><span>工法 / 大型加工</span><span>仕様 / φ1,200mm</span></div></div></article>
+      <article class="reveal group cursor-pointer overflow-hidden rounded-2xl border border-white/10 bg-charcoal/50 transition-all duration-500 hover:border-white/20" style="transition-delay:.2s"><div class="metal relative aspect-[4/3] overflow-hidden"><div class="tech-grid-sm absolute inset-0 opacity-40 transition-transform duration-700 group-hover:scale-110"></div><span class="absolute bottom-4 left-4 font-mono text-5xl font-bold text-white/5">A6063</span><span class="absolute left-4 top-4 rounded-full border border-accent-cyan/40 bg-ink/40 px-3 py-1 text-xs text-accent-cyan backdrop-blur-sm">半導体装置</span></div><div class="p-6"><h3 class="text-lg font-bold text-white">ウェハ搬送ユニット</h3><div class="mt-4 flex flex-wrap gap-x-5 gap-y-1 font-mono text-xs text-silver-muted"><span>材質 / A6063</span><span>工法 / 5軸加工</span><span>仕様 / 高剛性</span></div></div></article>
+    </div>
+  </div></section>
+
+  <section id="cases" class="relative overflow-hidden bg-navy-deep py-28 md:py-36"><div class="absolute left-0 top-1/4 h-[40vh] w-[40vw] rounded-full bg-accent/10 blur-[140px]"></div><div class="relative mx-auto max-w-7xl px-6">
+    <div class="reveal"><p class="font-mono text-xs tracking-[0.35em] text-accent">03 — CASE STUDIES</p><h2 class="mt-4 text-3xl font-bold tracking-tight text-white sm:text-5xl">加工事例</h2><p class="mt-5 max-w-2xl text-silver-muted">お客様の課題に、どう応えたか。代表的な加工事例を「課題・対応・成果」でご紹介します。</p></div>
+    <div class="mt-14 space-y-6">
+      <article class="reveal-left overflow-hidden rounded-2xl border border-white/10 bg-charcoal/40"><div class="grid lg:grid-cols-[300px_1fr]"><div class="metal relative flex flex-col justify-between p-8"><div class="tech-grid-sm absolute inset-0 opacity-40"></div><span class="relative w-fit rounded-full border border-accent-cyan/40 bg-ink/40 px-3 py-1 text-xs text-accent-cyan">半導体製造装置</span><h3 class="relative mt-6 text-xl font-bold text-white">大型真空チャンバーの<br>精度と短納期の両立</h3></div><div class="grid gap-6 p-8 sm:grid-cols-3"><div><p class="font-mono text-xs tracking-widest text-silver-dark">課題</p><p class="mt-3 text-sm leading-relaxed text-silver-muted">大型アルミ部品の高真空シール面に高い平面度が必要。かつタイトな納期。</p></div><div><p class="font-mono text-xs tracking-widest text-silver-dark">対応</p><p class="mt-3 text-sm leading-relaxed text-silver-muted">門型5面加工で工程を集約し段取りを削減。20℃測定室で全数検査。</p></div><div><p class="font-mono text-xs tracking-widest text-accent-cyan">成果</p><p class="mt-3 text-sm leading-relaxed text-white">平面度<span class="font-mono text-accent-cyan"> ±10μm </span>達成、納期<span class="font-mono text-accent-cyan"> 約30% </span>短縮。</p></div></div></div></article>
+      <article class="reveal-right overflow-hidden rounded-2xl border border-white/10 bg-charcoal/40"><div class="grid lg:grid-cols-[300px_1fr]"><div class="metal relative flex flex-col justify-between p-8"><div class="tech-grid-sm absolute inset-0 opacity-40"></div><span class="relative w-fit rounded-full border border-violet-300/40 bg-ink/40 px-3 py-1 text-xs text-violet-300">航空・宇宙関連</span><h3 class="relative mt-6 text-xl font-bold text-white">難削材チタンの<br>薄肉・複雑形状加工</h3></div><div class="grid gap-6 p-8 sm:grid-cols-3"><div><p class="font-mono text-xs tracking-widest text-silver-dark">課題</p><p class="mt-3 text-sm leading-relaxed text-silver-muted">Ti-6Al-4Vの薄肉複雑形状。工具摩耗と加工変形のリスクが高い。</p></div><div><p class="font-mono text-xs tracking-widest text-silver-dark">対応</p><p class="mt-3 text-sm leading-relaxed text-silver-muted">同時5軸制御で一発加工。専用工具と条件を最適化し変形を抑制。</p></div><div><p class="font-mono text-xs tracking-widest text-accent-cyan">成果</p><p class="mt-3 text-sm leading-relaxed text-white">寸法精度<span class="font-mono text-accent-cyan"> ±5μm </span>を確保、歩留りを改善。</p></div></div></div></article>
+      <article class="reveal-left overflow-hidden rounded-2xl border border-white/10 bg-charcoal/40"><div class="grid lg:grid-cols-[300px_1fr]"><div class="metal relative flex flex-col justify-between p-8"><div class="tech-grid-sm absolute inset-0 opacity-40"></div><span class="relative w-fit rounded-full border border-fuchsia-300/40 bg-ink/40 px-3 py-1 text-xs text-fuchsia-300">加速器関連</span><h3 class="relative mt-6 text-xl font-bold text-white">超高真空（UHV）<br>コンポーネントの製作</h3></div><div class="grid gap-6 p-8 sm:grid-cols-3"><div><p class="font-mono text-xs tracking-widest text-silver-dark">課題</p><p class="mt-3 text-sm leading-relaxed text-silver-muted">UHV環境に対応するクリーン度と、微小リークの確実な管理が必要。</p></div><div><p class="font-mono text-xs tracking-widest text-silver-dark">対応</p><p class="mt-3 text-sm leading-relaxed text-silver-muted">SUS316Lの精密加工＋専用洗浄。ヘリウムリーク試験で気密を検証。</p></div><div><p class="font-mono text-xs tracking-widest text-accent-cyan">成果</p><p class="mt-3 text-sm leading-relaxed text-white">UHV基準を<span class="font-mono text-accent-cyan"> クリア</span>、研究機関へ安定供給。</p></div></div></div></article>
+    </div>
+  </div></section>
+
+  <section id="facility" class="relative h-[300vh] bg-ink"><div class="sticky top-0 flex h-screen flex-col justify-center overflow-hidden">
+    <div class="mx-auto mb-10 w-full max-w-7xl px-6"><p class="font-mono text-xs tracking-[0.35em] text-accent">04 — FACILITY</p><h2 class="mt-4 text-3xl font-bold tracking-tight text-white sm:text-5xl">設備紹介</h2><p class="mt-4 max-w-xl text-silver-muted">最先端の加工機と測定機が、ミクロン単位の精度を生み出します。</p></div>
+    <div id="facility-track" class="flex gap-6 pl-[6vw] will-change-transform">
+      <article class="metal group relative h-[58vh] w-[80vw] shrink-0 overflow-hidden rounded-3xl border border-white/10 sm:w-[55vw] lg:w-[40vw]"><div class="tech-grid absolute inset-0 opacity-40"></div><div class="absolute inset-0 bg-gradient-to-t from-ink/90 via-transparent to-transparent"></div><span class="absolute right-6 top-6 font-mono text-6xl font-bold text-white/5">5FACE</span><div class="absolute bottom-0 p-8"><p class="font-mono text-xs tracking-widest text-accent-cyan">FJV 5FACE-60/80 FSW</p><h3 class="mt-2 text-2xl font-bold text-white">門型マシニングセンタ（5面加工）</h3><p class="mt-2 text-sm text-silver-muted">大型ワークを高精度に5面同時加工</p></div></article>
+      <article class="group relative h-[58vh] w-[80vw] shrink-0 overflow-hidden rounded-3xl border border-white/10 bg-charcoal sm:w-[55vw] lg:w-[40vw]"><img src="mazak1.jpg" alt="Mazak 同時5軸複合加工機" class="absolute inset-0 h-full w-full object-cover"><div class="absolute inset-0 bg-gradient-to-t from-ink via-ink/25 to-transparent"></div><span class="absolute right-6 top-6 font-mono text-5xl font-bold text-white/10">MAZAK</span><div class="absolute bottom-0 p-8"><p class="font-mono text-xs tracking-widest text-accent-cyan">Mazak / INTEGREX i-350H</p><h3 class="mt-2 text-2xl font-bold text-white">同時5軸制御 複合加工機</h3><p class="mt-2 text-sm text-silver-muted">旋削とミーリングを一台で複合加工</p></div></article>
+      <article class="group relative h-[58vh] w-[80vw] shrink-0 overflow-hidden rounded-3xl border border-white/10 bg-charcoal sm:w-[55vw] lg:w-[40vw]"><img src="svc2000.jpg" alt="Mazak SVC2000L/120 リニアモーター駆動 立型マシニングセンタ" class="absolute inset-0 h-full w-full object-cover"><div class="absolute inset-0 bg-gradient-to-t from-ink via-ink/25 to-transparent"></div><span class="absolute right-6 top-6 font-mono text-5xl font-bold text-white/10">MAZAK</span><div class="absolute bottom-0 p-8"><p class="font-mono text-xs tracking-widest text-accent-cyan">Mazak / SVC2000L/120</p><h3 class="mt-2 text-2xl font-bold text-white">リニアモーター駆動 立型MC</h3><p class="mt-2 text-sm text-silver-muted">高速・高精度な加工を実現</p></div></article>
+      <article class="metal group relative h-[58vh] w-[80vw] shrink-0 overflow-hidden rounded-3xl border border-white/10 sm:w-[55vw] lg:w-[40vw]"><div class="tech-grid absolute inset-0 opacity-40"></div><div class="absolute inset-0 bg-gradient-to-t from-ink/90 via-transparent to-transparent"></div><span class="absolute right-6 top-6 font-mono text-6xl font-bold text-white/5">CMM</span><div class="absolute bottom-0 p-8"><p class="font-mono text-xs tracking-widest text-accent-cyan">CRYSTA-Apex V574</p><h3 class="mt-2 text-2xl font-bold text-white">CNC三次元測定機</h3><p class="mt-2 text-sm text-silver-muted">温度管理室での高精度寸法測定</p></div></article>
+      <article class="metal group relative h-[58vh] w-[80vw] shrink-0 overflow-hidden rounded-3xl border border-white/10 sm:w-[55vw] lg:w-[40vw]"><div class="tech-grid absolute inset-0 opacity-40"></div><div class="absolute inset-0 bg-gradient-to-t from-ink/90 via-transparent to-transparent"></div><span class="absolute right-6 top-6 font-mono text-6xl font-bold text-white/5">3D-SCAN</span><div class="absolute bottom-0 p-8"><p class="font-mono text-xs tracking-widest text-accent-cyan">3Dスキャナ型</p><h3 class="mt-2 text-2xl font-bold text-white">3Dスキャナ型三次元測定機</h3><p class="mt-2 text-sm text-silver-muted">非接触で全体形状を高速測定</p></div></article>
+    </div>
+    <p class="mx-auto mt-8 w-full max-w-7xl px-6 font-mono text-xs text-silver-dark">SCROLL →</p>
+  </div></section>
+
+  <section id="quality" class="relative overflow-hidden bg-navy-deep py-28 md:py-36"><div class="mx-auto grid max-w-7xl gap-12 px-6 lg:grid-cols-2 lg:items-center">
+    <div class="reveal-left space-y-4"><div class="relative aspect-[4/3] overflow-hidden rounded-3xl border border-white/10 bg-charcoal"><img src="quality1.jpg" alt="三次元測定機による寸法検査" class="h-full w-full object-cover"><div class="absolute inset-0 bg-gradient-to-t from-ink/75 via-transparent to-transparent"></div><span class="absolute left-6 top-6 font-mono text-xs tracking-widest text-accent-cyan">CMM / 三次元測定</span><div class="absolute bottom-5 left-6"><p class="text-sm text-silver-muted">三次元測定機</p><p class="text-lg font-bold text-white">Coordinate Measuring Machine</p></div></div><div class="relative aspect-[16/10] overflow-hidden rounded-3xl border border-white/10 bg-charcoal"><img src="inspect.jpg" alt="画像測定システムによる検査" class="h-full w-full object-cover"><div class="absolute inset-0 bg-gradient-to-t from-ink/60 via-transparent to-transparent"></div><span class="absolute left-6 top-5 font-mono text-xs tracking-widest text-accent-cyan">IMAGE MEASUREMENT</span></div></div>
+    <div><div class="reveal-right"><p class="font-mono text-xs tracking-[0.35em] text-accent">05 — QUALITY</p><h2 class="mt-4 text-3xl font-bold tracking-tight text-white sm:text-5xl">品質への、<br>妥協なき責任。</h2><p class="mt-5 text-silver-muted">受入から出荷まで、4つの検査ステップと三次元測定で精度を保証。ISO 9001（2020年取得）に基づく品質マネジメント体制で、先端産業の要求に応えます。</p><div class="mt-6 flex flex-wrap gap-3"><span class="rounded-full border border-accent/40 px-4 py-1.5 text-xs text-accent-cyan">ISO 9001 認証取得</span><span class="rounded-full border border-white/15 px-4 py-1.5 text-xs text-silver">全数・抜取検査</span><span class="rounded-full border border-white/15 px-4 py-1.5 text-xs text-silver">20℃ 測定室</span><span class="rounded-full border border-white/15 px-4 py-1.5 text-xs text-silver">成績書発行</span></div></div>
+      <div class="mt-10 space-y-4">
+        <div class="reveal-right flex gap-5 rounded-xl border border-white/10 bg-charcoal/40 p-5"><span class="font-mono text-xs text-accent">STEP 01</span><div><h3 class="font-bold text-white">受入・材料検査</h3><p class="mt-1 text-sm text-silver-muted">材料証明書の確認と入荷時検査でトレーサビリティを確保。</p></div></div>
+        <div class="reveal-right flex gap-5 rounded-xl border border-white/10 bg-charcoal/40 p-5" style="transition-delay:.1s"><span class="font-mono text-xs text-accent">STEP 02</span><div><h3 class="font-bold text-white">工程内検査</h3><p class="mt-1 text-sm text-silver-muted">加工中の寸法を随時測定し、規格内であることを保証。</p></div></div>
+        <div class="reveal-right flex gap-5 rounded-xl border border-white/10 bg-charcoal/40 p-5" style="transition-delay:.2s"><span class="font-mono text-xs text-accent">STEP 03</span><div><h3 class="font-bold text-white">三次元測定</h3><p class="mt-1 text-sm text-silver-muted">20℃管理の測定室で三次元測定機により最終精度を検証。</p></div></div>
+        <div class="reveal-right flex gap-5 rounded-xl border border-white/10 bg-charcoal/40 p-5" style="transition-delay:.3s"><span class="font-mono text-xs text-accent">STEP 04</span><div><h3 class="font-bold text-white">検査成績書発行</h3><p class="mt-1 text-sm text-silver-muted">全数・抜取データを記録し、成績書を添えて出荷。</p></div></div>
+      </div>
+    </div>
+  </div></section>
+
+  <section id="company" class="relative border-t border-white/5 bg-ink py-28 md:py-36"><div class="mx-auto max-w-7xl px-6">
+    <div class="reveal"><p class="font-mono text-xs tracking-[0.35em] text-accent">06 — COMPANY</p><h2 class="mt-4 text-3xl font-bold tracking-tight text-white sm:text-5xl">会社案内</h2><p class="mt-6 max-w-3xl text-lg leading-relaxed text-silver">私たちは、目に見えないところで社会の最先端を支える「縁の下の技術者集団」です。大型精密部品加工から設計・組立、設備保全、重量物の運搬・据え付けまで、ものづくりを一貫してお引き受けします。</p></div>
+    <div class="reveal mt-16 grid gap-10 lg:grid-cols-[380px_1fr] lg:items-center">
+      <div class="relative mx-auto aspect-[4/5] w-full max-w-sm overflow-hidden rounded-3xl border border-white/10 bg-charcoal"><img src="president.jpg" alt="代表取締役 久松 元大" class="h-full w-full object-cover"></div>
+      <div><p class="font-mono text-xs tracking-[0.35em] text-accent">MESSAGE</p><h3 class="mt-3 text-2xl font-bold text-white sm:text-3xl">代表者挨拶</h3><div class="mt-6 space-y-4 leading-relaxed text-silver-muted" data-cms-multiline="ceo_message"><p>当社は1968年の創業以来、半導体製造装置をはじめ、FPD・エネルギー・航空宇宙・加速器といった、社会の最先端を支える分野の精密部品加工に取り組んでまいりました。</p><p>ものづくりの根幹は「人」にあります。ミクロン単位の精度は、最新設備と技術者一人ひとりの誇りと研鑽によって生み出されます。私たちは、確かな品質と誠実な仕事で、お客様の挑戦を足元から支え続けます。</p></div><div class="mt-8 flex items-center gap-4"><span class="h-px w-10 bg-accent"></span><div><p class="text-sm text-silver-muted">株式会社久松機工　代表取締役</p><p class="mt-1 text-xl font-bold text-white" data-cms="ceo">久松 元大</p></div></div></div>
+    </div>
+    <div class="reveal mt-16 overflow-hidden rounded-2xl border border-white/10 bg-charcoal/40"><dl class="divide-y divide-white/10">
+      <div class="grid grid-cols-1 gap-1 p-5 sm:grid-cols-[180px_1fr] sm:gap-6 sm:px-8"><dt class="text-sm text-silver-muted">会社名</dt><dd class="text-white" data-cms="company_name">株式会社 久松機工</dd></div>
+      <div class="grid grid-cols-1 gap-1 p-5 sm:grid-cols-[180px_1fr] sm:gap-6 sm:px-8"><dt class="text-sm text-silver-muted">所在地</dt><dd class="text-white"><span data-cms="address">〒190-1232 東京都西多摩郡瑞穂町長岡3-11-5</span>　<a href="https://www.google.com/maps?q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E8%A5%BF%E5%A4%9A%E6%91%A9%E9%83%A1%E7%91%9E%E7%A9%82%E7%94%BA%E9%95%B7%E5%B2%A13-11-5" target="_blank" rel="noopener" class="text-accent-cyan hover:text-white">MAP ›</a></dd></div>
+      <div class="grid grid-cols-1 gap-1 p-5 sm:grid-cols-[180px_1fr] sm:gap-6 sm:px-8"><dt class="text-sm text-silver-muted">TEL / FAX</dt><dd class="text-white"><a href="tel:0425335757" class="hover:text-accent-cyan" data-cms="tel">042-533-5757</a>　/　<span data-cms="fax">042-533-5755</span></dd></div>
+      <div class="grid grid-cols-1 gap-1 p-5 sm:grid-cols-[180px_1fr] sm:gap-6 sm:px-8"><dt class="text-sm text-silver-muted">創業 / 設立</dt><dd class="text-white"><span data-cms="founded">昭和53年5月（1978年）</span> ／ <span data-cms="established">平成10年5月（1998年）</span></dd></div>
+      <div class="grid grid-cols-1 gap-1 p-5 sm:grid-cols-[180px_1fr] sm:gap-6 sm:px-8"><dt class="text-sm text-silver-muted">代表取締役</dt><dd class="text-white" data-cms="ceo">久松 元大</dd></div>
+      <div class="grid grid-cols-1 gap-1 p-5 sm:grid-cols-[180px_1fr] sm:gap-6 sm:px-8"><dt class="text-sm text-silver-muted">社員数 / 資本金</dt><dd class="text-white"><span data-cms="employees">55名（2024年11月1日現在）</span> ／ <span data-cms="capital">2,500万円</span></dd></div>
+      <div class="grid grid-cols-1 gap-1 p-5 sm:grid-cols-[180px_1fr] sm:gap-6 sm:px-8"><dt class="text-sm text-silver-muted">認証</dt><dd class="text-white" data-cms="iso">ISO 9001（2020年取得）</dd></div>
+      <div class="grid grid-cols-1 gap-1 p-5 sm:grid-cols-[180px_1fr] sm:gap-6 sm:px-8"><dt class="text-sm text-silver-muted">事業内容</dt><dd class="text-white"><p class="font-medium">大型精密部品加工</p><div class="mt-3 flex flex-wrap gap-2"><span class="rounded-full border border-white/15 px-3 py-1 text-xs text-silver">半導体製造装置</span><span class="rounded-full border border-white/15 px-3 py-1 text-xs text-silver">FPD製造装置</span><span class="rounded-full border border-white/15 px-3 py-1 text-xs text-silver">エネルギー関連</span><span class="rounded-full border border-white/15 px-3 py-1 text-xs text-silver">航空・宇宙関連</span><span class="rounded-full border border-white/15 px-3 py-1 text-xs text-silver">加速器関連</span></div><ul class="mt-5 space-y-2 text-sm text-silver-muted"><li>・設計・組立</li><li>・材料販売（アルミ・SUS・金属全般取扱い）</li><li>・設備保全・修理</li><li>・重量運搬・機械移動・据え付け</li></ul></dd></div>
+    </dl></div>
+    <div class="mt-20">
+      <div class="reveal flex items-end justify-between"><h3 class="text-2xl font-bold text-white sm:text-3xl">沿革</h3><span class="font-mono text-xs tracking-widest text-silver-dark">HISTORY / since 1968</span></div>
+      <ol class="relative mt-10 ml-2 border-l border-white/10">
+        <li class="reveal-left relative pl-8 pb-9"><span class="absolute -left-[5px] top-2 h-2.5 w-2.5 rounded-full bg-silver-dark"></span><div class="flex flex-col gap-1 sm:flex-row sm:gap-6"><span class="shrink-0 font-mono text-sm text-accent-cyan sm:w-44">1968 <span class="text-silver-dark">昭和43年</span></span><p class="text-silver">東京都日野市で開業</p></div></li>
+        <li class="reveal-left relative pl-8 pb-9"><span class="absolute -left-[5px] top-2 h-2.5 w-2.5 rounded-full bg-accent"></span><div class="flex flex-col gap-1 sm:flex-row sm:gap-6"><span class="shrink-0 font-mono text-sm text-accent-cyan sm:w-44">1978 <span class="text-silver-dark">昭和53年</span></span><div><p class="text-white">あきる野市で「久松機工」を創業</p><p class="mt-1 text-sm text-silver-muted">精密機械部品・半導体製造装置部品の加工を受注</p></div></div></li>
+        <li class="reveal-left relative pl-8 pb-9"><span class="absolute -left-[5px] top-2 h-2.5 w-2.5 rounded-full bg-silver-dark"></span><div class="flex flex-col gap-1 sm:flex-row sm:gap-6"><span class="shrink-0 font-mono text-sm text-accent-cyan sm:w-44">1985 <span class="text-silver-dark">昭和60年</span></span><p class="text-silver">立型マシニングセンタを導入、NC加工体制を確立</p></div></li>
+        <li class="reveal-left relative pl-8 pb-9"><span class="absolute -left-[5px] top-2 h-2.5 w-2.5 rounded-full bg-accent"></span><div class="flex flex-col gap-1 sm:flex-row sm:gap-6"><span class="shrink-0 font-mono text-sm text-accent-cyan sm:w-44">1998 <span class="text-silver-dark">平成10年</span></span><div><p class="text-white">有限会社設立、青梅市へ工場移転</p><p class="mt-1 text-sm text-silver-muted">門型マシニングセンタ導入（FJV-60/120）</p></div></div></li>
+        <li class="reveal-left relative pl-8 pb-9"><span class="absolute -left-[5px] top-2 h-2.5 w-2.5 rounded-full bg-accent"></span><div class="flex flex-col gap-1 sm:flex-row sm:gap-6"><span class="shrink-0 font-mono text-sm text-accent-cyan sm:w-44">2006 <span class="text-silver-dark">平成18年</span></span><p class="text-white">株式会社に組織変更</p></div></li>
+        <li class="reveal-left relative pl-8 pb-9"><span class="absolute -left-[5px] top-2 h-2.5 w-2.5 rounded-full bg-accent"></span><div class="flex flex-col gap-1 sm:flex-row sm:gap-6"><span class="shrink-0 font-mono text-sm text-accent-cyan sm:w-44">2007 <span class="text-silver-dark">平成19年</span></span><div><p class="text-white">瑞穂工場完成、本社を瑞穂町へ移転</p><p class="mt-1 text-sm text-silver-muted">同時5軸制御MC（e-1060）・リニア駆動立型MC 導入</p></div></div></li>
+        <li class="reveal-left relative pl-8 pb-9"><span class="absolute -left-[5px] top-2 h-2.5 w-2.5 rounded-full bg-silver-dark"></span><div class="flex flex-col gap-1 sm:flex-row sm:gap-6"><span class="shrink-0 font-mono text-sm text-accent-cyan sm:w-44">2012 <span class="text-silver-dark">平成24年</span></span><p class="text-silver">三次元測定機（CRYSTA-Apex S9106）導入、品質保証体制を強化</p></div></li>
+        <li class="reveal-left relative pl-8 pb-9"><span class="absolute -left-[5px] top-2 h-2.5 w-2.5 rounded-full bg-silver-dark"></span><div class="flex flex-col gap-1 sm:flex-row sm:gap-6"><span class="shrink-0 font-mono text-sm text-accent-cyan sm:w-44">2017 <span class="text-silver-dark">平成29年</span></span><p class="text-white">今井工場（青梅市）開設</p></div></li>
+        <li class="reveal-left relative pl-8 pb-9"><span class="absolute -left-[6px] top-1.5 h-3.5 w-3.5 rounded-full bg-accent ring-4 ring-accent/20"></span><div class="flex flex-col gap-1 sm:flex-row sm:gap-6"><span class="shrink-0 font-mono text-sm text-accent-cyan sm:w-44">2020 <span class="text-silver-dark">令和2年</span></span><div><div class="flex flex-wrap items-center gap-3"><p class="text-white">新町工場（青梅市）開設</p><span class="rounded-full bg-accent/15 px-2.5 py-0.5 text-xs font-medium text-accent-cyan">ISO 9001 取得</span></div><p class="mt-1 text-sm text-silver-muted">5面門型MC・3Dスキャナ型三次元測定機 導入</p></div></div></li>
+        <li class="reveal-left relative pl-8 pb-9"><span class="absolute -left-[5px] top-2 h-2.5 w-2.5 rounded-full bg-silver-dark"></span><div class="flex flex-col gap-1 sm:flex-row sm:gap-6"><span class="shrink-0 font-mono text-sm text-accent-cyan sm:w-44">2021 <span class="text-silver-dark">令和3年</span></span><p class="text-silver">複合旋盤（INTEGREX i-350H）・CNC三次元測定機（CRYSTA-Apex V574）導入</p></div></li>
+        <li class="reveal-left relative pl-8"><span class="absolute -left-[5px] top-2 h-2.5 w-2.5 rounded-full bg-accent"></span><div class="flex flex-col gap-1 sm:flex-row sm:gap-6"><span class="shrink-0 font-mono text-sm text-accent-cyan sm:w-44">2022 <span class="text-silver-dark">令和4年</span></span><p class="text-white">狭山工場（埼玉県狭山市）開設、関東4拠点体制へ</p></div></li>
+      </ol>
+    </div>
+  </div></section>
+
+  <!-- ▼ お知らせ（DBから読み込み） ▼ -->
+  <section id="news" class="relative border-t border-white/5 bg-navy-deep py-24 md:py-32"><div class="mx-auto max-w-4xl px-6">
+    <div class="reveal"><p class="font-mono text-xs tracking-[0.35em] text-accent">NEWS</p><h2 class="mt-3 text-3xl font-bold text-white sm:text-5xl">お知らせ</h2></div>
+    <div id="cms-news" class="reveal mt-10 overflow-hidden rounded-2xl border border-white/10 bg-charcoal/40 divide-y divide-white/10"><div class="p-6 text-silver-muted">読み込み中…</div></div>
+  </div></section>
+
+  <!-- ▼ 記事・コラム（DBから読み込み） ▼ -->
+  <section id="articles" class="relative bg-ink py-24 md:py-32"><div class="mx-auto max-w-7xl px-6">
+    <div class="reveal"><p class="font-mono text-xs tracking-[0.35em] text-accent">COLUMN</p><h2 class="mt-3 text-3xl font-bold text-white sm:text-5xl">記事・コラム</h2></div>
+    <div id="cms-articles" class="reveal mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3"><div class="text-silver-muted">読み込み中…</div></div>
+  </div></section>
+
+  <section id="recruit-teaser" class="relative overflow-hidden bg-navy-deep py-28 md:py-36"><div class="absolute right-0 top-0 h-[40vh] w-[40vw] rounded-full bg-accent/10 blur-[120px]"></div><div class="relative mx-auto max-w-7xl px-6">
+    <div class="reveal"><p class="font-mono text-xs tracking-[0.35em] text-accent">07 — RECRUIT</p><h2 class="mt-4 text-4xl font-bold tracking-tight text-white sm:text-6xl">精度は、<span class="text-gradient-silver">人がつくる。</span></h2><p class="mt-6 max-w-2xl text-silver-muted">最先端を支えるのは、技術と誇りを持った人。社員インタビュー・1日の流れ・募集要項は、採用ページで詳しくご覧いただけます。</p></div>
+    <div class="reveal mt-10" style="transition-delay:.1s"><a href="#recruit" data-page="recruit" class="inline-flex rounded-full bg-grad px-8 py-4 font-bold text-ink transition-transform hover:scale-105">採用ページを見る →</a></div>
+  </div></section>
+
+  <section id="contact" class="relative overflow-hidden border-t border-white/5 bg-ink py-28 md:py-36"><div class="tech-grid-sm absolute inset-0 opacity-20"></div><div class="relative mx-auto max-w-4xl px-6">
+    <div class="reveal text-center"><p class="font-mono text-xs tracking-[0.35em] text-accent">08 — TECHNICAL CONSULTATION</p><h2 class="mt-4 text-3xl font-bold tracking-tight text-white sm:text-5xl">まずは、お気軽に技術相談を。</h2><p class="mt-5 text-silver-muted">図面が無い構想段階のご相談から、お見積り・採用まで。専門スタッフが対応します。</p></div>
+    <div class="reveal mt-12 grid grid-cols-2 gap-3 sm:grid-cols-4"><div class="rounded-xl border border-white/10 bg-charcoal/40 p-4 text-center"><p class="font-mono text-xs text-accent">STEP 01</p><p class="mt-2 text-sm text-white">技術相談</p></div><div class="rounded-xl border border-white/10 bg-charcoal/40 p-4 text-center"><p class="font-mono text-xs text-accent">STEP 02</p><p class="mt-2 text-sm text-white">お見積り</p></div><div class="rounded-xl border border-white/10 bg-charcoal/40 p-4 text-center"><p class="font-mono text-xs text-accent">STEP 03</p><p class="mt-2 text-sm text-white">試作・検証</p></div><div class="rounded-xl border border-white/10 bg-charcoal/40 p-4 text-center"><p class="font-mono text-xs text-accent">STEP 04</p><p class="mt-2 text-sm text-white">量産・納品</p></div></div>
+    <div id="contact-form-wrap" class="reveal mx-auto mt-10 max-w-3xl"><form id="contact-form" class="grid gap-5 rounded-2xl border border-white/10 bg-charcoal/40 p-6 sm:p-10">
+      <div class="grid gap-5 sm:grid-cols-2"><div><label class="mb-2 block text-sm text-silver-muted">会社名</label><input type="text" placeholder="株式会社○○" class="w-full rounded-lg border border-white/10 bg-ink/60 px-4 py-3 text-white outline-none focus:border-accent placeholder:text-silver-dark"></div><div><label class="mb-2 block text-sm text-silver-muted">お名前<span class="ml-1 text-accent">*</span></label><input type="text" required placeholder="山田 太郎" class="w-full rounded-lg border border-white/10 bg-ink/60 px-4 py-3 text-white outline-none focus:border-accent placeholder:text-silver-dark"></div></div>
+      <div class="grid gap-5 sm:grid-cols-2"><div><label class="mb-2 block text-sm text-silver-muted">メール<span class="ml-1 text-accent">*</span></label><input type="email" required placeholder="you@example.com" class="w-full rounded-lg border border-white/10 bg-ink/60 px-4 py-3 text-white outline-none focus:border-accent placeholder:text-silver-dark"></div><div><label class="mb-2 block text-sm text-silver-muted">電話番号</label><input type="tel" placeholder="000-0000-0000" class="w-full rounded-lg border border-white/10 bg-ink/60 px-4 py-3 text-white outline-none focus:border-accent placeholder:text-silver-dark"></div></div>
+      <div><label class="mb-2 block text-sm text-silver-muted">ご相談内容<span class="ml-1 text-accent">*</span></label><textarea rows="5" required placeholder="加工内容・材質・数量・ご希望納期などをご記入ください。" class="w-full rounded-lg border border-white/10 bg-ink/60 px-4 py-3 text-white outline-none focus:border-accent placeholder:text-silver-dark"></textarea></div>
+      <button type="submit" class="mt-2 rounded-full bg-accent py-4 font-medium text-white transition-colors hover:bg-accent-cyan">技術相談を送信する</button>
+    </form></div>
+    <div id="contact-thanks" class="hidden mx-auto mt-10 max-w-3xl rounded-2xl border border-accent/30 bg-charcoal/60 p-12 text-center"><p class="text-xl font-bold text-white">ありがとうございます。</p><p class="mt-3 text-silver-muted">担当者より2営業日以内にご連絡いたします。</p></div>
+    <p class="mt-8 text-center text-sm text-silver-muted">お電話：<a href="tel:0425335757" class="ml-2 font-mono text-lg text-white hover:text-accent-cyan">042-533-5757</a><span class="ml-2 text-xs">（平日 9:00–17:00）</span></p>
+  </div></section>
+</div>
+
+<div id="page-recruit" class="page hidden pb-24 lg:pb-0">
+  <section id="r-top" class="relative flex min-h-[100svh] items-center overflow-hidden bg-ink">
+    <img src="event.jpg" alt="社内イベントの様子" class="absolute inset-0 h-full w-full object-cover">
+    <div class="tech-grid absolute inset-0 opacity-20"></div>
+    <div class="absolute inset-0 bg-gradient-to-r from-ink via-ink/85 to-ink/50 lg:via-ink/75 lg:to-ink/25"></div>
+    <div class="absolute inset-0 bg-gradient-to-t from-ink via-ink/20 to-ink/50"></div>
+    <div class="relative z-10 mx-auto w-full max-w-7xl px-6"><div class="max-w-2xl">
+      <p class="reveal mb-5 font-mono text-xs tracking-[0.35em] text-accent-cyan">RECRUIT 2026</p>
+      <h1 class="text-balance text-4xl font-bold leading-[1.18] tracking-tight text-white sm:text-6xl"><span class="reveal block" style="transition-delay:.1s">モノづくりの未来を、</span><span class="reveal block text-grad" style="transition-delay:.25s">一緒につくる。</span></h1>
+      <p class="reveal mt-7 max-w-lg text-base leading-relaxed text-silver sm:text-lg" style="transition-delay:.45s">半導体、航空宇宙、加速器——世界の最先端は、あなたの「ミクロンの一手」に支えられている。未経験からでも、本物の技術者になれる場所です。</p>
+      <div class="reveal mt-7 flex flex-wrap gap-2.5" style="transition-delay:.55s"><span class="rounded-full border border-accent-cyan/40 bg-ink/40 px-4 py-1.5 text-sm text-accent-cyan backdrop-blur-sm">未経験歓迎</span><span class="rounded-full border border-accent-teal/40 bg-ink/40 px-4 py-1.5 text-sm text-accent-teal backdrop-blur-sm">20〜30代活躍中</span><span class="rounded-full border border-white/20 bg-ink/40 px-4 py-1.5 text-sm text-silver backdrop-blur-sm">年間休日120日以上</span><span class="rounded-full border border-white/20 bg-ink/40 px-4 py-1.5 text-sm text-silver backdrop-blur-sm">残業少なめ</span></div>
+      <div class="reveal mt-9 flex flex-col gap-3 sm:flex-row" style="transition-delay:.65s"><a href="#entry" class="rounded-full bg-grad px-8 py-4 text-center font-bold text-ink transition-transform hover:scale-[1.03]">エントリーする</a><a href="#interview" class="rounded-full border border-white/25 bg-ink/30 px-8 py-4 text-center font-medium text-white backdrop-blur-sm transition-all hover:border-white/50 hover:bg-white/5">先輩社員の声を見る</a></div>
+    </div></div>
+    <div class="absolute bottom-7 left-1/2 -translate-x-1/2"><div class="animate-bob flex h-10 w-6 items-start justify-center rounded-full border border-white/25 p-1.5"><span class="h-2 w-1 rounded-full bg-accent-cyan"></span></div></div>
+  </section>
+
+  <section id="interview" class="relative bg-ink py-24 md:py-32"><div class="mx-auto max-w-7xl px-6">
+    <div class="reveal"><p class="font-mono text-xs tracking-[0.35em] text-accent-cyan">INTERVIEW</p><h2 class="mt-3 text-3xl font-bold tracking-tight text-white sm:text-5xl">先輩社員の<span class="text-grad">声</span></h2><p class="mt-4 max-w-2xl text-silver-muted">入社のきっかけも、やりがいも、人それぞれ。リアルな声を聞いてみてください。</p></div>
+    <div class="mt-12 grid gap-6 md:grid-cols-3">
+      <article class="reveal-scale overflow-hidden rounded-3xl border border-white/10 bg-charcoal/50"><div class="people relative aspect-[4/5]"><svg viewBox="0 0 200 240" class="absolute inset-0 h-full w-full opacity-80" fill="none"><defs><linearGradient id="v1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#dbe3ec" stop-opacity=".8"/><stop offset="1" stop-color="#0e2148" stop-opacity=".05"/></linearGradient></defs><g fill="url(#v1)"><circle cx="100" cy="92" r="40"/><path d="M34 240 C34 168 60 138 100 124 C140 138 166 168 166 240 Z"/></g></svg><span class="absolute left-4 top-4 rounded-full bg-grad px-3 py-1 text-xs font-bold text-ink">入社3年目</span></div><div class="p-6"><p class="text-lg font-bold leading-snug text-white">「未経験から、一台を任されるまで成長できた。」</p><p class="mt-3 text-sm text-silver-muted">田中 健太｜機械加工オペレーター（24歳）</p><dl class="mt-5 space-y-3 text-sm"><div><dt class="text-accent-cyan">入社のきっかけ</dt><dd class="mt-1 text-silver-muted">手に職をつけたくて。未経験OKと教育制度の手厚さが決め手でした。</dd></div><div><dt class="text-accent-cyan">やりがい</dt><dd class="mt-1 text-silver-muted">自分が削った部品が、最先端の半導体装置に使われている実感です。</dd></div></dl></div></article>
+      <article class="reveal-scale overflow-hidden rounded-3xl border border-white/10 bg-charcoal/50" style="transition-delay:.1s"><div class="relative aspect-[4/5] bg-charcoal"><img src="staff1.jpg" alt="大和 大河" class="h-full w-full object-cover"><span class="absolute left-4 top-4 rounded-full bg-grad px-3 py-1 text-xs font-bold text-ink">品質保証・検査</span></div><div class="p-6"><p class="text-lg font-bold leading-snug text-white">「ミクロンの精度を、この目で見極める。」</p><p class="mt-3 text-sm text-silver-muted">大和 大河｜品質保証・三次元測定</p><dl class="mt-5 space-y-3 text-sm"><div><dt class="text-accent-cyan">仕事内容</dt><dd class="mt-1 text-silver-muted">三次元測定機・画像測定機で加工品を検査し、品質を保証しています。</dd></div><div><dt class="text-accent-cyan">やりがい</dt><dd class="mt-1 text-silver-muted">最先端の装置に使われる部品を、自分の手で保証できることです。</dd></div></dl><p class="mt-4 rounded-lg bg-accent/10 px-3 py-2 text-[11px] leading-relaxed text-accent-cyan">※コメントは仮の文章です。大和さんご本人の言葉に差し替えます。</p></div></article>
+      <article class="reveal-scale overflow-hidden rounded-3xl border border-white/10 bg-charcoal/50" style="transition-delay:.2s"><div class="people relative aspect-[4/5]"><svg viewBox="0 0 200 240" class="absolute inset-0 h-full w-full opacity-80" fill="none"><defs><linearGradient id="v3" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e3dbec" stop-opacity=".8"/><stop offset="1" stop-color="#0e2148" stop-opacity=".05"/></linearGradient></defs><g fill="url(#v3)"><circle cx="100" cy="92" r="40"/><path d="M34 240 C34 168 60 138 100 124 C140 138 166 168 166 240 Z"/></g></svg><span class="absolute left-4 top-4 rounded-full bg-grad px-3 py-1 text-xs font-bold text-ink">入社10年目</span></div><div class="p-6"><p class="text-lg font-bold leading-snug text-white">「難しい形状ほど、燃える。」</p><p class="mt-3 text-sm text-silver-muted">鈴木 大輔｜5軸加工プログラマー（34歳）</p><dl class="mt-5 space-y-3 text-sm"><div><dt class="text-accent-cyan">いまの役割</dt><dd class="mt-1 text-silver-muted">CAMで5軸プログラムを作成。後輩の育成も担当しています。</dd></div><div><dt class="text-accent-cyan">挑戦したいこと</dt><dd class="mt-1 text-silver-muted">航空宇宙の難削材加工で、社内の技術を一段引き上げたい。</dd></div></dl></div></article>
+    </div>
+  </div></section>
+
+  <section id="day" class="relative overflow-hidden bg-navy-deep py-24 md:py-32"><div class="tech-grid absolute inset-0 opacity-30"></div><div class="relative mx-auto max-w-5xl px-6">
+    <div class="reveal"><p class="font-mono text-xs tracking-[0.35em] text-accent-cyan">A DAY</p><h2 class="mt-3 text-3xl font-bold tracking-tight text-white sm:text-5xl">ある1日の<span class="text-grad">流れ</span></h2><p class="mt-4 text-silver-muted">加工オペレーター・田中さんのとある一日。無理のないリズムで働けます。</p></div>
+    <ol class="relative mt-12 ml-2 border-l border-white/10">
+      <li class="reveal-left relative pl-8 pb-8"><span class="absolute -left-[9px] top-1 grid h-[18px] w-[18px] place-items-center rounded-full bg-grad text-[10px]">🌅</span><div class="flex flex-col gap-1 sm:flex-row sm:gap-6"><span class="shrink-0 font-mono text-sm text-accent-cyan sm:w-20">8:00</span><div><p class="font-bold text-white">出社・着替え</p><p class="text-sm text-silver-muted">制服に着替えて準備。空調完備で一年中快適です。</p></div></div></li>
+      <li class="reveal-left relative pl-8 pb-8"><span class="absolute -left-[9px] top-1 grid h-[18px] w-[18px] place-items-center rounded-full bg-grad text-[10px]">📋</span><div class="flex flex-col gap-1 sm:flex-row sm:gap-6"><span class="shrink-0 font-mono text-sm text-accent-cyan sm:w-20">8:15</span><div><p class="font-bold text-white">朝礼・予定確認</p><p class="text-sm text-silver-muted">今日の加工予定と安全確認をチームで共有。</p></div></div></li>
+      <li class="reveal-left relative pl-8 pb-8"><span class="absolute -left-[9px] top-1 grid h-[18px] w-[18px] place-items-center rounded-full bg-grad text-[10px]">⚙️</span><div class="flex flex-col gap-1 sm:flex-row sm:gap-6"><span class="shrink-0 font-mono text-sm text-accent-cyan sm:w-20">8:30</span><div><p class="font-bold text-white">加工スタート</p><p class="text-sm text-silver-muted">図面とプログラムを確認し、マシニングセンタを段取り。</p></div></div></li>
+      <li class="reveal-left relative pl-8 pb-8"><span class="absolute -left-[9px] top-1 grid h-[18px] w-[18px] place-items-center rounded-full bg-grad text-[10px]">🍱</span><div class="flex flex-col gap-1 sm:flex-row sm:gap-6"><span class="shrink-0 font-mono text-sm text-accent-cyan sm:w-20">12:00</span><div><p class="font-bold text-white">昼休み</p><p class="text-sm text-silver-muted">休憩室でランチ。同期や先輩とのんびり。</p></div></div></li>
+      <li class="reveal-left relative pl-8 pb-8"><span class="absolute -left-[9px] top-1 grid h-[18px] w-[18px] place-items-center rounded-full bg-grad text-[10px]">📐</span><div class="flex flex-col gap-1 sm:flex-row sm:gap-6"><span class="shrink-0 font-mono text-sm text-accent-cyan sm:w-20">13:00</span><div><p class="font-bold text-white">加工・測定</p><p class="text-sm text-silver-muted">午後は加工と寸法測定。先輩に相談しながら精度を追い込みます。</p></div></div></li>
+      <li class="reveal-left relative pl-8"><span class="absolute -left-[9px] top-1 grid h-[18px] w-[18px] place-items-center rounded-full bg-grad text-[10px]">🏠</span><div class="flex flex-col gap-1 sm:flex-row sm:gap-6"><span class="shrink-0 font-mono text-sm text-accent-cyan sm:w-20">17:15</span><div><p class="font-bold text-white">退社</p><p class="text-sm text-silver-muted">残業は少なめ。趣味やプライベートの時間も大切に。</p></div></div></li>
+    </ol>
+  </div></section>
+
+  <section id="culture" class="relative bg-ink py-24 md:py-32"><div class="mx-auto max-w-7xl px-6">
+    <div class="reveal"><p class="font-mono text-xs tracking-[0.35em] text-accent-cyan">CULTURE</p><h2 class="mt-3 text-3xl font-bold tracking-tight text-white sm:text-5xl">社内の<span class="text-grad">イベント</span></h2><p class="mt-4 max-w-2xl text-silver-muted">餅つき大会や社員旅行など、季節の行事も。仕事だけじゃない、あたたかい社風です。</p></div>
+    <div class="mt-12 grid gap-4 sm:grid-cols-3">
+      <div class="reveal-scale overflow-hidden rounded-2xl border border-white/10 bg-charcoal"><img src="event.jpg" alt="社内イベント" class="aspect-[4/3] w-full object-cover transition-transform duration-500 hover:scale-105"></div>
+      <div class="reveal-scale overflow-hidden rounded-2xl border border-white/10 bg-charcoal" style="transition-delay:.1s"><img src="event2.jpg" alt="社内イベント" class="aspect-[4/3] w-full object-cover transition-transform duration-500 hover:scale-105"></div>
+      <div class="reveal-scale overflow-hidden rounded-2xl border border-white/10 bg-charcoal" style="transition-delay:.2s"><img src="event3.jpg" alt="社内イベント" class="aspect-[4/3] w-full object-cover transition-transform duration-500 hover:scale-105"></div>
+    </div>
+  </div></section>
+
+  <section id="benefits" class="relative bg-navy-deep py-24 md:py-32"><div class="mx-auto max-w-7xl px-6">
+    <div class="reveal"><p class="font-mono text-xs tracking-[0.35em] text-accent-cyan">BENEFITS</p><h2 class="mt-3 text-3xl font-bold tracking-tight text-white sm:text-5xl">働く環境・<span class="text-grad">福利厚生</span></h2><p class="mt-4 max-w-2xl text-silver-muted">安心して長く働ける環境を整えています。</p></div>
+    <div class="mt-12 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
+      <div class="reveal-scale rounded-2xl border border-white/10 bg-charcoal/50 p-6"><span class="text-3xl">🛡️</span><p class="mt-3 font-bold text-white">各種社会保険完備</p></div>
+      <div class="reveal-scale rounded-2xl border border-white/10 bg-charcoal/50 p-6" style="transition-delay:.05s"><span class="text-3xl">💰</span><p class="mt-3 font-bold text-white">賞与 年2回</p></div>
+      <div class="reveal-scale rounded-2xl border border-white/10 bg-charcoal/50 p-6" style="transition-delay:.1s"><span class="text-3xl">📈</span><p class="mt-3 font-bold text-white">昇給 年1回</p></div>
+      <div class="reveal-scale rounded-2xl border border-white/10 bg-charcoal/50 p-6" style="transition-delay:.15s"><span class="text-3xl">🎓</span><p class="mt-3 font-bold text-white">資格取得支援</p></div>
+      <div class="reveal-scale rounded-2xl border border-white/10 bg-charcoal/50 p-6"><span class="text-3xl">🚗</span><p class="mt-3 font-bold text-white">マイカー通勤OK</p></div>
+      <div class="reveal-scale rounded-2xl border border-white/10 bg-charcoal/50 p-6" style="transition-delay:.05s"><span class="text-3xl">👕</span><p class="mt-3 font-bold text-white">制服貸与</p></div>
+      <div class="reveal-scale rounded-2xl border border-white/10 bg-charcoal/50 p-6" style="transition-delay:.1s"><span class="text-3xl">❄️</span><p class="mt-3 font-bold text-white">空調完備の工場</p></div>
+      <div class="reveal-scale rounded-2xl border border-white/10 bg-charcoal/50 p-6" style="transition-delay:.15s"><span class="text-3xl">🎉</span><p class="mt-3 font-bold text-white">社内イベント・社員旅行</p></div>
+    </div>
+  </div></section>
+
+  <section id="requirements" class="relative bg-ink py-24 md:py-32"><div class="mx-auto max-w-4xl px-6">
+    <div class="reveal text-center"><p class="font-mono text-xs tracking-[0.35em] text-accent-cyan">REQUIREMENTS</p><h2 class="mt-3 text-3xl font-bold text-white sm:text-5xl">募集要項</h2><p class="mt-4 text-silver-muted">新卒・中途、それぞれの募集内容です。タブで切り替えてご覧ください。</p></div>
+    <div class="rq-tabs reveal mt-10">
+      <input type="radio" name="rq" id="rq-new" checked><input type="radio" name="rq" id="rq-mid">
+      <div class="rq-labels mb-6 flex justify-center gap-3"><label for="rq-new" class="select-none rounded-full border border-white/15 px-6 py-2.5 text-sm font-medium text-silver transition-colors">新卒採用</label><label for="rq-mid" class="select-none rounded-full border border-white/15 px-6 py-2.5 text-sm font-medium text-silver transition-colors">中途採用</label></div>
+      <div class="rq-body">
+        <div class="rq-panel" id="rq-panel-new"><dl class="divide-y divide-white/10 overflow-hidden rounded-2xl border border-white/10 bg-charcoal/50">
+          <div class="grid grid-cols-1 gap-1 p-5 sm:grid-cols-[160px_1fr] sm:gap-6 sm:px-8"><dt class="text-sm text-silver-muted">募集職種</dt><dd class="text-white">機械加工オペレーター／CAM・5軸プログラマー／品質保証・検査</dd></div>
+          <div class="grid grid-cols-1 gap-1 p-5 sm:grid-cols-[160px_1fr] sm:gap-6 sm:px-8"><dt class="text-sm text-silver-muted">応募資格</dt><dd class="text-white">高校・高専・専門・大学 卒業見込みの方（学部・学科不問）</dd></div>
+          <div class="grid grid-cols-1 gap-1 p-5 sm:grid-cols-[160px_1fr] sm:gap-6 sm:px-8"><dt class="text-sm text-silver-muted">給与（例）</dt><dd class="text-white">高卒 月給18万円〜／専門・高専卒 19.5万円〜／大卒 21万円〜</dd></div>
+          <div class="grid grid-cols-1 gap-1 p-5 sm:grid-cols-[160px_1fr] sm:gap-6 sm:px-8"><dt class="text-sm text-silver-muted">諸手当・賞与</dt><dd class="text-white">通勤・時間外・資格手当ほか／賞与 年2回</dd></div>
+          <div class="grid grid-cols-1 gap-1 p-5 sm:grid-cols-[160px_1fr] sm:gap-6 sm:px-8"><dt class="text-sm text-silver-muted">勤務時間</dt><dd class="text-white">8:30〜17:15（休憩あり）</dd></div>
+          <div class="grid grid-cols-1 gap-1 p-5 sm:grid-cols-[160px_1fr] sm:gap-6 sm:px-8"><dt class="text-sm text-silver-muted">休日休暇</dt><dd class="text-white">年間120日以上（土日祝・GW・夏季・年末年始）、有給・慶弔・特別休暇</dd></div>
+          <div class="grid grid-cols-1 gap-1 p-5 sm:grid-cols-[160px_1fr] sm:gap-6 sm:px-8"><dt class="text-sm text-silver-muted">待遇・福利厚生</dt><dd class="text-white">各種社会保険完備、退職金制度、制服貸与、資格取得支援、定期健診</dd></div>
+          <div class="grid grid-cols-1 gap-1 p-5 sm:grid-cols-[160px_1fr] sm:gap-6 sm:px-8"><dt class="text-sm text-silver-muted">勤務地</dt><dd class="text-white">本社（東京都瑞穂町）ほか各工場</dd></div>
+          <div class="grid grid-cols-1 gap-1 p-5 sm:grid-cols-[160px_1fr] sm:gap-6 sm:px-8"><dt class="text-sm text-silver-muted">選考の流れ</dt><dd class="text-white">エントリー → 会社説明・工場見学 → 面接 → 内定</dd></div>
+        </dl></div>
+        <div class="rq-panel" id="rq-panel-mid"><dl class="divide-y divide-white/10 overflow-hidden rounded-2xl border border-white/10 bg-charcoal/50">
+          <div class="grid grid-cols-1 gap-1 p-5 sm:grid-cols-[160px_1fr] sm:gap-6 sm:px-8"><dt class="text-sm text-silver-muted">募集職種</dt><dd class="text-white">機械加工オペレーター／5軸プログラマー／品質保証・検査／設計・組立</dd></div>
+          <div class="grid grid-cols-1 gap-1 p-5 sm:grid-cols-[160px_1fr] sm:gap-6 sm:px-8"><dt class="text-sm text-silver-muted">雇用形態</dt><dd class="text-white">正社員（試用期間3ヶ月）</dd></div>
+          <div class="grid grid-cols-1 gap-1 p-5 sm:grid-cols-[160px_1fr] sm:gap-6 sm:px-8"><dt class="text-sm text-silver-muted">応募資格</dt><dd class="text-white">経験者優遇（未経験・異業種からの転職も歓迎）</dd></div>
+          <div class="grid grid-cols-1 gap-1 p-5 sm:grid-cols-[160px_1fr] sm:gap-6 sm:px-8"><dt class="text-sm text-silver-muted">給与（例）</dt><dd class="text-white">月給24万円〜（経験・能力を考慮し決定）</dd></div>
+          <div class="grid grid-cols-1 gap-1 p-5 sm:grid-cols-[160px_1fr] sm:gap-6 sm:px-8"><dt class="text-sm text-silver-muted">昇給・賞与</dt><dd class="text-white">昇給 年1回／賞与 年2回</dd></div>
+          <div class="grid grid-cols-1 gap-1 p-5 sm:grid-cols-[160px_1fr] sm:gap-6 sm:px-8"><dt class="text-sm text-silver-muted">勤務時間</dt><dd class="text-white">8:30〜17:15（休憩あり）</dd></div>
+          <div class="grid grid-cols-1 gap-1 p-5 sm:grid-cols-[160px_1fr] sm:gap-6 sm:px-8"><dt class="text-sm text-silver-muted">休日休暇</dt><dd class="text-white">年間120日以上、有給・慶弔・特別休暇</dd></div>
+          <div class="grid grid-cols-1 gap-1 p-5 sm:grid-cols-[160px_1fr] sm:gap-6 sm:px-8"><dt class="text-sm text-silver-muted">待遇・福利厚生</dt><dd class="text-white">各種社会保険完備、退職金制度、制服貸与、資格取得支援</dd></div>
+          <div class="grid grid-cols-1 gap-1 p-5 sm:grid-cols-[160px_1fr] sm:gap-6 sm:px-8"><dt class="text-sm text-silver-muted">勤務地</dt><dd class="text-white">本社（瑞穂町）／今井・新町・狭山工場（希望考慮）</dd></div>
+          <div class="grid grid-cols-1 gap-1 p-5 sm:grid-cols-[160px_1fr] sm:gap-6 sm:px-8"><dt class="text-sm text-silver-muted">選考の流れ</dt><dd class="text-white">書類選考 → 面接（1〜2回）→ 内定</dd></div>
+        </dl></div>
+      </div>
+    </div>
+    <div class="reveal mt-8 text-center"><a href="#entry" class="inline-flex rounded-full bg-grad px-8 py-4 font-bold text-ink transition-transform hover:scale-105">この内容でエントリーする →</a></div>
+  </div></section>
+
+  <section id="faq" class="relative bg-navy-deep py-24 md:py-32"><div class="mx-auto max-w-3xl px-6">
+    <div class="reveal text-center"><p class="font-mono text-xs tracking-[0.35em] text-accent-cyan">FAQ</p><h2 class="mt-3 text-3xl font-bold text-white sm:text-5xl">よくある質問</h2></div>
+    <div class="mt-10 space-y-3">
+      <details class="faq reveal rounded-2xl border border-white/10 bg-charcoal/50 p-5"><summary class="flex items-center justify-between gap-4"><span class="font-bold text-white">未経験でも応募できますか？</span><span class="plus text-2xl font-light text-accent-cyan">+</span></summary><p class="mt-3 text-sm leading-relaxed text-silver-muted">はい。社員の多くが未経験スタートです。教育制度とOJTで、機械操作から一つずつ学べます。</p></details>
+      <details class="faq reveal rounded-2xl border border-white/10 bg-charcoal/50 p-5"><summary class="flex items-center justify-between gap-4"><span class="font-bold text-white">文系・異業種からの転職でも大丈夫？</span><span class="plus text-2xl font-light text-accent-cyan">+</span></summary><p class="mt-3 text-sm leading-relaxed text-silver-muted">問題ありません。学歴や前職より、ものづくりへの興味と意欲を大切にしています。</p></details>
+      <details class="faq reveal rounded-2xl border border-white/10 bg-charcoal/50 p-5"><summary class="flex items-center justify-between gap-4"><span class="font-bold text-white">工場は暑かったり汚れたりしませんか？</span><span class="plus text-2xl font-light text-accent-cyan">+</span></summary><p class="mt-3 text-sm leading-relaxed text-silver-muted">空調完備で年間を通して快適。最新設備の整ったクリーンな現場です。</p></details>
+      <details class="faq reveal rounded-2xl border border-white/10 bg-charcoal/50 p-5"><summary class="flex items-center justify-between gap-4"><span class="font-bold text-white">残業や休日はどのくらい？</span><span class="plus text-2xl font-light text-accent-cyan">+</span></summary><p class="mt-3 text-sm leading-relaxed text-silver-muted">月平均の残業は少なめ、年間休日120日以上が目安。プライベートも大切にできます。</p></details>
+      <details class="faq reveal rounded-2xl border border-white/10 bg-charcoal/50 p-5"><summary class="flex items-center justify-between gap-4"><span class="font-bold text-white">必要な資格はありますか？</span><span class="plus text-2xl font-light text-accent-cyan">+</span></summary><p class="mt-3 text-sm leading-relaxed text-silver-muted">入社時は不要です。入社後に資格取得支援制度を使ってスキルアップできます。</p></details>
+      <details class="faq reveal rounded-2xl border border-white/10 bg-charcoal/50 p-5"><summary class="flex items-center justify-between gap-4"><span class="font-bold text-white">女性も活躍できますか？</span><span class="plus text-2xl font-light text-accent-cyan">+</span></summary><p class="mt-3 text-sm leading-relaxed text-silver-muted">はい。加工・検査・品質保証など幅広い職種で女性社員が活躍しています。</p></details>
+    </div>
+  </div></section>
+
+  <section id="entry" class="relative overflow-hidden bg-ink py-24 md:py-32"><div class="absolute left-1/2 top-0 h-72 w-[80vw] -translate-x-1/2 rounded-full bg-accent-cyan/10 blur-[120px]"></div><div class="relative mx-auto max-w-3xl px-6">
+    <div class="reveal text-center"><p class="font-mono text-xs tracking-[0.35em] text-accent-cyan">ENTRY</p><h2 class="mt-3 text-3xl font-bold text-white sm:text-5xl">エントリー</h2><p class="mt-4 text-silver-muted">「まずは話を聞いてみたい」だけでも大歓迎。カジュアル面談・工場見学も受け付けています。</p></div>
+    <div id="entry-form-wrap" class="reveal mt-10"><form id="entry-form" class="grid gap-5 rounded-3xl border border-white/10 bg-charcoal/50 p-6 sm:p-10">
+      <div class="grid gap-5 sm:grid-cols-2"><div><label class="mb-2 block text-sm text-silver-muted">お名前<span class="ml-1 text-accent-cyan">*</span></label><input type="text" required placeholder="山田 太郎" class="w-full rounded-xl border border-white/10 bg-ink/60 px-4 py-3 text-white outline-none focus:border-accent-cyan placeholder:text-silver-dark"></div><div><label class="mb-2 block text-sm text-silver-muted">フリガナ</label><input type="text" placeholder="ヤマダ タロウ" class="w-full rounded-xl border border-white/10 bg-ink/60 px-4 py-3 text-white outline-none focus:border-accent-cyan placeholder:text-silver-dark"></div></div>
+      <div class="grid gap-5 sm:grid-cols-2"><div><label class="mb-2 block text-sm text-silver-muted">メール<span class="ml-1 text-accent-cyan">*</span></label><input type="email" required placeholder="you@example.com" class="w-full rounded-xl border border-white/10 bg-ink/60 px-4 py-3 text-white outline-none focus:border-accent-cyan placeholder:text-silver-dark"></div><div><label class="mb-2 block text-sm text-silver-muted">電話番号</label><input type="tel" placeholder="090-0000-0000" class="w-full rounded-xl border border-white/10 bg-ink/60 px-4 py-3 text-white outline-none focus:border-accent-cyan placeholder:text-silver-dark"></div></div>
+      <div class="grid gap-5 sm:grid-cols-2"><div><label class="mb-2 block text-sm text-silver-muted">応募区分</label><select class="w-full rounded-xl border border-white/10 bg-ink/60 px-4 py-3 text-white outline-none focus:border-accent-cyan"><option>新卒</option><option>中途・経験者</option><option>中途・未経験</option><option>アルバイト・パート</option></select></div><div><label class="mb-2 block text-sm text-silver-muted">希望職種</label><select class="w-full rounded-xl border border-white/10 bg-ink/60 px-4 py-3 text-white outline-none focus:border-accent-cyan"><option>機械加工オペレーター</option><option>5軸加工・プログラマー</option><option>品質保証・検査</option><option>設計・組立</option><option>相談したい</option></select></div></div>
+      <div><label class="mb-2 block text-sm text-silver-muted">自己PR・メッセージ</label><textarea rows="4" placeholder="志望動機やご質問など、自由にご記入ください。（任意）" class="w-full rounded-xl border border-white/10 bg-ink/60 px-4 py-3 text-white outline-none focus:border-accent-cyan placeholder:text-silver-dark"></textarea></div>
+      <label class="flex items-start gap-3 text-sm text-silver-muted"><input type="checkbox" required class="mt-1 h-4 w-4"><span>個人情報の取り扱いに同意します<span class="text-accent-cyan">*</span></span></label>
+      <button type="submit" class="mt-2 rounded-full bg-grad py-4 text-lg font-bold text-ink transition-transform hover:scale-[1.02]">エントリーを送信する 🚀</button>
+    </form></div>
+    <div id="entry-thanks" class="hidden mt-10 rounded-3xl border border-accent-cyan/30 bg-charcoal/60 p-12 text-center"><p class="text-2xl font-bold text-white">ありがとうございます！🎉</p><p class="mt-3 text-silver-muted">エントリーを受け付けました。担当者より2営業日以内にご連絡します。</p></div>
+    <p class="mt-8 text-center text-sm text-silver-muted">お電話：<a href="tel:0425335757" class="ml-1 font-mono text-lg text-white hover:text-accent-cyan">042-533-5757</a><span class="ml-2 text-xs">（平日 9:00–17:00／採用担当）</span></p>
+  </div></section>
+</div>
+</main>
+
+<footer class="border-t border-white/10 bg-ink py-16"><div class="mx-auto max-w-7xl px-6">
+  <div class="flex flex-col justify-between gap-10 md:flex-row">
+    <div><div class="flex items-baseline gap-2"><span class="text-xl font-bold text-white">久松機工</span><span class="font-mono text-[10px] tracking-[0.3em] text-silver-muted">HISAMATSU</span></div><p class="mt-4 max-w-xs text-sm leading-relaxed text-silver-muted">未来を支える、精密加工技術。</p><div class="mt-5 space-y-1 text-sm text-silver-muted"><p data-cms="address">〒190-1232 東京都西多摩郡瑞穂町長岡3-11-5</p><p>TEL <a href="tel:0425335757" class="hover:text-white" data-cms="tel">042-533-5757</a>　FAX <span data-cms="fax">042-533-5755</span></p></div><p class="mt-5 font-mono text-xs text-silver-dark" data-cms="iso">ISO 9001 認証取得（2020年）</p></div>
+    <nav class="grid grid-cols-2 gap-x-12 gap-y-3 sm:grid-cols-3">
+      <a href="#strengths" data-page="company" data-target="strengths" class="text-sm text-silver-muted hover:text-white transition-colors">強み</a>
+      <a href="#works" data-page="company" data-target="works" class="text-sm text-silver-muted hover:text-white transition-colors">加工実績</a>
+      <a href="#quality" data-page="company" data-target="quality" class="text-sm text-silver-muted hover:text-white transition-colors">品質管理</a>
+      <a href="#facility" data-page="company" data-target="facility" class="text-sm text-silver-muted hover:text-white transition-colors">設備紹介</a>
+      <a href="#company" data-page="company" data-target="company" class="text-sm text-silver-muted hover:text-white transition-colors">会社案内</a>
+      <a href="#news" data-page="company" data-target="news" class="text-sm text-silver-muted hover:text-white transition-colors">お知らせ</a>
+      <a href="#recruit" data-page="recruit" class="text-sm text-silver-muted hover:text-white transition-colors">採用情報</a>
+      <a href="#contact" data-page="company" data-target="contact" class="text-sm text-silver-muted hover:text-white transition-colors">技術相談</a>
+    </nav>
+  </div>
+  <div class="mt-12 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-8 sm:flex-row"><p class="font-mono text-xs text-silver-dark">© <span class="year"></span> HISAMATSU KIKOU Co., Ltd. All rights reserved.</p><div class="flex gap-6 text-xs text-silver-dark"><a href="#" class="hover:text-white">プライバシーポリシー</a><a href="#" class="hover:text-white">サイトマップ</a></div></div>
+</div></footer>
+
+<div id="entry-bar" class="hidden fixed inset-x-0 bottom-0 z-50 border-t border-white/10 bg-ink/90 p-3 backdrop-blur-xl lg:hidden"><a href="#entry" class="block rounded-full bg-grad py-3.5 text-center font-bold text-ink">1分でエントリー / 相談する</a></div>
+
+<script>
+  const progress=document.getElementById('progress'),header=document.getElementById('header');
+  const pageCompany=document.getElementById('page-company'),pageRecruit=document.getElementById('page-recruit');
+  const mobileMenu=document.getElementById('mobile-menu'),menuBtn=document.getElementById('menu-btn'),entryBar=document.getElementById('entry-bar');
+  let currentPage='company';
+  const onScroll=()=>{header.classList.toggle('scrolled',window.scrollY>24);const h=document.documentElement;const max=h.scrollHeight-h.clientHeight;progress.style.width=(max>0?(window.scrollY/max)*100:0)+'%';};
+  window.addEventListener('scroll',onScroll,{passive:true});
+  const revealObs=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('in');});},{threshold:.12,rootMargin:'0px 0px -60px 0px'});
+  const countObs=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){runCount(e.target);countObs.unobserve(e.target);}});},{threshold:.5});
+  function runCount(el){const t=parseFloat(el.dataset.count),d=parseInt(el.dataset.decimals||'0'),pf=el.dataset.prefix||'',sf=el.dataset.suffix||'';const dur=1700,st=performance.now();const tick=(n)=>{const p=Math.min((n-st)/dur,1);const e2=1-Math.pow(1-p,3);el.textContent=pf+(t*e2).toFixed(d)+sf;if(p<1)requestAnimationFrame(tick);};requestAnimationFrame(tick);}
+  function activate(c){c.querySelectorAll('.reveal,.reveal-left,.reveal-right,.reveal-scale').forEach(el=>{revealObs.unobserve(el);el.classList.remove('in');revealObs.observe(el);});c.querySelectorAll('[data-count]').forEach(el=>{countObs.unobserve(el);el.textContent=(el.dataset.prefix||'')+'0'+(el.dataset.suffix||'');countObs.observe(el);});}
+  function goToPage(page,target){
+    const switching=page!==currentPage,isR=page==='recruit';
+    pageCompany.classList.toggle('hidden',isR);pageRecruit.classList.toggle('hidden',!isR);
+    entryBar.classList.toggle('hidden',!isR);
+    history.replaceState(null,'',isR?'#recruit':'#home');
+    if(switching){currentPage=page;activate(isR?pageRecruit:pageCompany);window.scrollTo(0,0);}
+    if(target){const t=document.getElementById(target);if(t)requestAnimationFrame(()=>t.scrollIntoView({behavior:switching?'auto':'smooth',block:'start'}));}
+  }
+  document.querySelectorAll('[data-page]').forEach(el=>{el.addEventListener('click',(e)=>{e.preventDefault();goToPage(el.dataset.page,el.dataset.target);mobileMenu.classList.add('hidden');menuBtn.classList.remove('open');});});
+  document.querySelectorAll('a[href^="#"]:not([data-page])').forEach(a=>{a.addEventListener('click',(e)=>{const id=a.getAttribute('href').slice(1);if(!id)return;const t=document.getElementById(id);if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth',block:'start'});mobileMenu.classList.add('hidden');menuBtn.classList.remove('open');}});});
+  menuBtn.addEventListener('click',()=>{mobileMenu.classList.toggle('hidden');menuBtn.classList.toggle('open');});
+  const facility=document.getElementById('facility'),track=document.getElementById('facility-track');
+  if(facility&&track){const f=()=>{const r=facility.getBoundingClientRect();const total=facility.offsetHeight-window.innerHeight;if(total<=0)return;const pr=Math.min(Math.max(-r.top/total,0),1);const maxX=Math.max(track.scrollWidth-window.innerWidth+64,0);track.style.transform='translateX('+(-pr*maxX)+'px)';};window.addEventListener('scroll',f,{passive:true});window.addEventListener('resize',f);}
+  const px=document.querySelectorAll('[data-parallax]');const pf=()=>{const y=window.scrollY;px.forEach(el=>el.style.transform='translate3d(0,'+(y*parseFloat(el.dataset.parallax))+'px,0)');};window.addEventListener('scroll',pf,{passive:true});
+  function wireForm(f,w,t){const form=document.getElementById(f);if(!form)return;form.addEventListener('submit',(e)=>{e.preventDefault();document.getElementById(w).classList.add('hidden');const th=document.getElementById(t);th.classList.remove('hidden');th.scrollIntoView({behavior:'smooth',block:'center'});});}
+  wireForm('contact-form','contact-form-wrap','contact-thanks');wireForm('entry-form','entry-form-wrap','entry-thanks');
+  document.querySelectorAll('.year').forEach(el=>el.textContent=new Date().getFullYear());
+  onScroll();activate(pageCompany);
+  if(location.hash==='#recruit')goToPage('recruit');
+</script>
+
+<!-- ▼ DB（GAS）からコンテンツを読み込む ▼ -->
+<script>
+  function cmsEsc(s){return (s==null?'':String(s)).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
+  window.__cms = function(d){
+    try{
+      if(d && d.company){
+        document.querySelectorAll('[data-cms]').forEach(function(el){var k=el.getAttribute('data-cms');var val=d.company[k];if(val!==undefined&&val!=='')el.textContent=val;});
+        document.querySelectorAll('[data-cms-multiline]').forEach(function(el){var k=el.getAttribute('data-cms-multiline');var val=d.company[k];if(val){el.innerHTML='';String(val).split(/\n/).forEach(function(line){if(line.trim()){var p=document.createElement('p');p.textContent=line;el.appendChild(p);}});}});
+      }
+      // お知らせ
+      var nb=document.getElementById('cms-news');
+      if(nb){var list=(d&&d.news)||[];nb.innerHTML=list.length?list.map(function(n){return '<div class="p-6"><div class="flex flex-wrap items-center gap-3"><span class="font-mono text-xs text-accent-cyan">'+cmsEsc(String(n['日付']).slice(0,10))+'</span><span class="rounded-full border border-white/15 px-2.5 py-0.5 text-[11px] text-silver">'+cmsEsc(n['カテゴリ']||'お知らせ')+'</span></div><h3 class="mt-2 font-bold text-white">'+cmsEsc(n['タイトル'])+'</h3><p class="mt-1 text-sm leading-relaxed text-silver-muted">'+cmsEsc(n['本文'])+'</p></div>';}).join(''):'<div class="p-6 text-silver-muted">お知らせはありません。</div>';}
+      // 記事
+      var ab=document.getElementById('cms-articles');
+      if(ab){var arts=(d&&d.articles)||[];ab.innerHTML=arts.length?arts.map(function(a){var thumb=a['サムネイルURL']?'<div class="aspect-[16/9] overflow-hidden bg-charcoal"><img src="'+cmsEsc(a['サムネイルURL'])+'" alt="" class="h-full w-full object-cover"></div>':'<div class="metal aspect-[16/9]"></div>';return '<article class="overflow-hidden rounded-2xl border border-white/10 bg-charcoal/50">'+thumb+'<div class="p-6"><div class="flex flex-wrap items-center gap-3"><span class="font-mono text-xs text-accent-cyan">'+cmsEsc(String(a['日付']).slice(0,10))+'</span><span class="rounded-full border border-white/15 px-2.5 py-0.5 text-[11px] text-silver">'+cmsEsc(a['カテゴリ']||'記事')+'</span></div><h3 class="mt-2 font-bold text-white">'+cmsEsc(a['タイトル'])+'</h3><p class="mt-2 text-sm leading-relaxed text-silver-muted">'+cmsEsc(String(a['本文']).slice(0,90))+'</p></div></article>';}).join(''):'<div class="text-silver-muted">記事はまだありません。</div>';}
+    }catch(err){console.error(err);}
+  };
+</script>
+<script src="https://script.google.com/macros/s/AKfycbyGuT_OGZvIZ68U6dX5PcLo511cAAfOznxdKP1ulVcii9_lcox-eqwpa4JxELwkQMyn/exec?type=data&callback=__cms"></script>
+</body>
+</html>
